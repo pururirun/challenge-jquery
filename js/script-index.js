@@ -8,7 +8,7 @@ $(function () {
 });
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
-		renderActivities(activitiesArray)
+		renderActivities(activities)
 });
 
 
@@ -57,6 +57,7 @@ function renderActivities(activitiesArray) {
 * Aqui se tiene que crear el HTML que esta en el
 * archivo "templates/templates-activity.html"
 */
-function renderActivity(recipe) {
-	$(".list-activities").append("<h4><span class='author'>"+recipe.userName+"</span><span class='recipe'>"+recipe.recipeName+"</span><span class='recipe'>"+recipe.recipeName+"</span></h4>")
+function renderActivity(activities) {
+	$(".list-activities").append("<h4><img src='img/activity/activity-placeholder-strawberry-640x640.jpg'" + activities.userAvatar + "/><span class='author'>"+activities.userName+"</span><span class='recipe'>"+activities.recipeName+"</span><span class='location'>"+activities.place+"</span></h4>");
+
 }
