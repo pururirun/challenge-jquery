@@ -32,6 +32,8 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
+	$(".list-recipes").append("<h4><span class='title-recipe'>"+recipe.title+"</span><span class='author-recipe'>"+recipe.source.name+ "</span><img src='img/recipes/320x350/" + recipe.name + ".jpg'/></h4>");
+
 	console.log('Voy a imprimir la receta: ', recipe);
 }
 
