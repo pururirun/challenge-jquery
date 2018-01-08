@@ -3,6 +3,9 @@ $(document).ready( function(){
 $('.hidden').toggle();
 
 
+$(function () {
+		$('.textNews').text('NUEVAS RECETAS');
+});
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
